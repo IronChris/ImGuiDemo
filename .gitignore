@@ -1,0 +1,21 @@
+# Beispiel .gitignore für C++/CMake
+echo "
+# Build-Verzeichnisse
+build/
+bin/
+*.exe
+
+# Editor-Temporärdateien
+.vscode/
+.idea/
+*.swp
+
+# CMake generierte Dateien
+CMakeCache.txt
+CMakeFiles/
+" > .gitignore
+
+# Dann nochmal commiten & pushen
+git add .gitignore
+git commit -m "Add .gitignore"
+git push
